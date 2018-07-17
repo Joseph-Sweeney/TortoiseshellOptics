@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-  width: 960px;
+  max-width: 960px;
   margin: auto;
 }
 
@@ -75,6 +75,27 @@ header .flex {
   font-weight: bold;
   font-size: 2rem;
   line-height: 1.2;
+}
+
+@media only screen and (max-width: 1024px) {
+  nav.container {
+    max-width: 100%;
+  }
+
+  header {
+    height: 22rem;
+    padding-top: 0;
+  }
+
+  .main-banner {
+    margin-top: 5rem;
+    margin-right: 2rem;
+    padding: 0.75rem 4rem;
+  }
+
+  .main-banner h1 {
+    font-size: 1.33rem;
+  }
 }
 
 /* Supporting Sections */
