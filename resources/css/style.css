@@ -125,3 +125,18 @@ header .flex {
 .info p {
   padding: 1rem 0;
 }
+
+/* Footer */
+
+footer {
+  display: flex;
+  align-items: center;
+  padding: 4rem 2rem;
+  background-color: azure;
+}
+
+footer img {
+  height: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
