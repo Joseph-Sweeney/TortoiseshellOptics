@@ -112,11 +112,42 @@ header .flex {
   }
 }
 
+@media only screen and (max-width : 560px) {
+  header div span {
+    display: none;
+  }
+
+  header {
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  .main-banner {
+    margin: 9rem auto 0 auto;
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+  }
+
+  .main-banner h1 {
+    font-size: 1rem;
+  }
+}
+
 /* Supporting Sections */
 
 .supporting {
   display: flex;
   justify-content: center;
+}
+
+@media only screen and (max-width: 560px) {
+  .supporting {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 3rem;
+  }
 }
 
 /* Service Section */
@@ -141,6 +172,14 @@ header .flex {
   width: 3.5rem;
 }
 
+@media only screen and (max-width: 560px) {
+  .service {
+    height: auto;
+    margin: .77rem;
+    font-size: .77rem;
+  }
+}
+
 /* Info Section */
 
 .info {
@@ -161,6 +200,24 @@ header .flex {
   padding: 1rem 0;
 }
 
+@media only screen and (max-width: 560px) {
+  .info {
+    width: 100%;
+  }
+
+  .title {
+    width: 100%;
+    max-width: none;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .info p {
+    padding-top: 1rem;
+    font-size: 0.77rem;
+  }
+}
+
 /* Footer */
 
 footer {
@@ -174,4 +231,14 @@ footer img {
   height: 1.5rem;
   margin-left: 2rem;
   margin-right: 1rem;
+}
+
+@media only screen and (max-width: 560px) {
+  footer div {
+    display: none;
+  }
+
+  footer {
+    justify-content: center;
+  }
 }
